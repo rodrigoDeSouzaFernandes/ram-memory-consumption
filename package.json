@@ -2,9 +2,9 @@
   "name": "ram-memory-consumption",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node pcRamUsage"
   },
   "repository": {
     "type": "git",
