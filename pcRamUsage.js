@@ -7,14 +7,17 @@ setInterval(() => {
 
   const tram = convertBytesToMegaBytes(totalmem()),
     fram = convertBytesToMegaBytes(freemem()),
-    usage = (fram / tram) * 100;
+    percentUsage = ((tram - fram) / tram) * 100,
+    usage = tram - fram;
 
   const stats = {
     OS: platform(),
     Arch: arch(),
     TotalRAM: `${tram} MB`,
     FreeRAM: `${fram} MB`,
-    Usage: `${usage.toFixed(2)}%`
+    Usage: `${usage} MB`,
+    PercentUsage: `${percentUsage.toFixed(2)}%`,
+    
   };
 
   console.clear()
