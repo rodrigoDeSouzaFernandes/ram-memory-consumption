@@ -1,4 +1,4 @@
-#RAM MEMORY USAGE
+# RAM MEMORY USAGE
 
 Pequeno e simples programinha para consultar a porcentagem de consumo de memória RAM do usuário.
 
